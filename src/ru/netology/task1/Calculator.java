@@ -2,8 +2,7 @@ package ru.netology.task1;
 
 import java.util.function.*;
 
-public class Calculator
-{
+public class Calculator {
     static Supplier<Calculator> instance = Calculator::new;
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
@@ -15,6 +14,6 @@ public class Calculator
 
     Predicate<Integer> isPositive = x -> x > 0;
 
-    Consumer<Integer> println = System.out :: println;
+    Consumer<Integer> println = System.out::println;
 
 }
